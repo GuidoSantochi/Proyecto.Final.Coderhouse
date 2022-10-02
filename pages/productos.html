@@ -3,12 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fuente Awesome link cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         <!-- Mi Css -->
-        <link rel="stylesheet" href="./css/main.css">
-        <title>GxG - Inicio</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- js -->
+        <script src="../js/script.js" defer ></script>
+        <!-- Titulo -->
+        <title>GxG - Productos</title>
     </head>
     <body">
     <header>
@@ -17,7 +22,7 @@
             <div class="container-fluid">
             <!-- icono-->
             <a class="navbar-brand" href="./index.html">
-                <img class="logo-nav" src="./assets/images/Logo.png" alt="logo">
+                <img class="logo-nav" src="../assets/images/Logo.png" alt="logo">
             </a>                
             <!-- boton del menu hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,17 +32,17 @@
             <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Menu
                 </a>
                 <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./pages/productos.html">Productos</a></li>
-                    <li><a class="dropdown-item" href="./pages/soporte-tecnico.html">Soporte Tecnico</a><li>   
-                    <li><a class="dropdown-item" href="./pages/carrito.html">Carrito</a></li>
-                    <li><a class="dropdown-item" href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a class="dropdown-item" href="./productos.html">Productos</a></li>
+                    <li><a class="dropdown-item" href="./soporte-tecnico.html">Soporte Tecnico</a><li>   
+                    <li><a class="dropdown-item" href="./carrito.html">Carrito</a></li>
+                    <li><a class="dropdown-item" href="./sobre-nosotros.html">Sobre Nosotros</a></li>
                 </ul>
                 </li>
             </ul>
@@ -71,6 +76,215 @@
     </nav>
     </header>
     <main>
+        <!-- Contenedor Productos -->
+        <div class="contenedor-productos">
+            <h1 class="titulo-productos">Juegos</h3>
+            <div class="contenedor-tarjetas-productos">
+                <div class="producto" data-name="p-1">
+                    <img src="../assets/images/ETSimulator2GE.jpeg" alt="ETS2GE">
+                    <h3>Euro Truck Simulator 2:GE</h3>
+                    <div class="precio">$1999,99</div>
+                </div>
+                <div class="producto" data-name="p-2">
+                    <img src="../assets/images/AgeII.jpeg" alt="age2">
+                    <h3>Age of Empires 2:DE</h3>
+                    <div class="precio">$1999,99</div>
+                </div>
+                <div class="producto" data-name="p-3">
+                    <img src="../assets/images/Minecraft.jpeg" alt="minecraft">
+                    <h3>Minecraft</h3>
+                    <div class="precio">$1999,99</div>
+                </div>
+                <div class="producto" data-name="p-4">
+                    <img src="../assets/images/MHRise.jpeg" alt="MHRise">
+                    <h3>Monster Hunter Rise</h3>
+                    <div class="precio">$1999,99</div>
+                </div>
+                <div class="producto" data-name="p-5">
+                    <img src="../assets/images/Forager.jpeg" alt="Forager">
+                    <h3>Forager</h3>
+                    <div class="precio">$1999,99</div>
+                </div>
+                <div class="producto" data-name="p-6">
+                    <img src="../assets/images/DeadByDaylight.jpeg" alt="DeadByDaylight">
+                    <h3>Dead by Daylight</h3>
+                    <div class="precio">$1999,99</div>
+                </div>
+                <div class="producto" data-name="p-7">
+                    <img src="../assets/images/Elden Ring.jpeg" alt="Elden Ring">
+                    <h3>Elden Ring</h3>
+                    <div class="precio">$1999,99</div>
+                </div>
+                <div class="producto" data-name="p-8">
+                    <img src="../assets/images/GTAV.jpeg" alt="GTAV">
+                    <h3>GTA V</h3>
+                    <div class="precio">$1999,99</div>
+                </div>
+            </div>
+        </div>
+        <!-- Contenedor Vista previa de los productos -->
+        <div class="producto-prevista">
+            <div class="prevista" data-target="p-1">
+                <i class="fas fa-times"></i>
+                <img src="../assets/images/ETSimulator2GE.jpeg" alt="ETS2GE">
+                <h3>Euro Truck Simulator</h3>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>( 19.129 )</span>
+                </div>
+                <p>Simuladores</p>
+                <div class="precio">$1999,99</div>
+                <div class="botones-tarjeta-productos">
+                    <a href="#" class="comprar" >Comprar</a>
+                    <a href="#" class="carrito" >Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="prevista" data-target="p-2">
+                <i class="fas fa-times"></i>
+                <img src="../assets/images/AgeII.jpeg" alt="age2">
+                <h3>Age of Empires II:DE</h3>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>( 12.192 )</span>
+                </div>
+                <p>Estrategia</p>
+                <div class="precio">$1999,99</div>
+                <div class="botones-tarjeta-productos">
+                    <a href="#" class="comprar" >Comprar</a>
+                    <a href="#" class="carrito" >Añadir al carrito</a>
+                </div>
+            </div>
+            
+            <div class="prevista" data-target="p-3">
+                <i class="fas fa-times"></i>
+                <img src="../assets/images/Minecraft.jpeg" alt="minecraft">
+                <h3>Minecraft</h3>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>( 435.349 )</span>
+                </div>
+                <p>Sandbox</p>
+                <div class="precio">$1999,99</div>
+                <div class="botones-tarjeta-productos">
+                    <a href="#" class="comprar" >Comprar</a>
+                    <a href="#" class="carrito" >Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="prevista" data-target="p-4">
+                <i class="fas fa-times"></i>
+                <img src="../assets/images/MHRise.jpeg" alt="MHRise">
+                <h3>Monster Hunter Rise</h3>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>( 35.349 )</span>
+                </div>
+                <p>MMORPG</p>
+                <div class="precio">$1999,99</div>
+                <div class="botones-tarjeta-productos">
+                    <a href="#" class="comprar" >Comprar</a>
+                    <a href="#" class="carrito" >Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="prevista" data-target="p-5">
+                <i class="fas fa-times"></i>
+                <img src="../assets/images/Forager.jpeg" alt="Forager">
+                <h3>Forager</h3>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>( 235.349 )</span>
+                </div>
+                <p>Aventura</p>
+                <div class="precio">$1999,99</div>
+                <div class="botones-tarjeta-productos">
+                    <a href="#" class="comprar" >Comprar</a>
+                    <a href="#" class="carrito" >Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="prevista" data-target="p-6">
+                <i class="fas fa-times"></i>
+                <img src="../assets/images/DeadByDaylight.jpeg" alt="DeadByDaylight">
+                <h3>Dead by Daylight</h3>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>( 85.349 )</span>
+                </div>
+                <p>Terror</p>
+                <div class="precio">$1999,99</div>
+                <div class="botones-tarjeta-productos">
+                    <a href="#" class="comprar" >Comprar</a>
+                    <a href="#" class="carrito" >Añadir al carrito</a>
+                </div>
+            </div>
+            
+            <div class="prevista" data-target="p-7">
+                <i class="fas fa-times"></i>
+                <img src="../assets/images/Elden Ring.jpeg" alt="Elden Ring">
+                <h3>Elden Ring</h3>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>( 285.349 )</span>
+                </div>
+                <p>Mundo Abierto</p>
+                <div class="precio">$1999,99</div>
+                <div class="botones-tarjeta-productos">
+                    <a href="#" class="comprar" >Comprar</a>
+                    <a href="#" class="carrito" >Añadir al carrito</a>
+                </div>
+            </div>
+            
+            <div class="prevista" data-target="p-8">
+                <i class="fas fa-times"></i>
+                <img src="../assets/images/GTAV.jpeg" alt="GTAV">
+                <h3>GTA V</h3>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>( 2.285.349 )</span>
+                </div>
+                <p>Accion</p>
+                <div class="precio">$1999,99</div>
+                <div class="botones-tarjeta-productos">
+                    <a href="#" class="comprar" >Comprar</a>
+                    <a href="#" class="carrito" >Añadir al carrito</a>
+                </div>
+            </div>
+
+        </div>
     </main>
     <!-- Pie de Pagina -->
     <footer class="pie-pagina bg-dark text-light">
@@ -78,7 +292,7 @@
             <div class="box-footer">
                 <figure>
                     <a href="#">
-                        <img class="logo-footer" src="./assets/images/Logo.png" alt="logo">
+                        <img class="logo-footer" src="../assets/images/Logo.png" alt="logo">
                     </a>
                 </figure>
             </div>
